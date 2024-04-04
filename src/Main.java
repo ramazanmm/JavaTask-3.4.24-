@@ -83,18 +83,18 @@ public class Main {
         System.out.print("movcud valyutani daxil edin: ");
         String valyuta = task.nextLine();
         System.out.print("deyeri daxil edin: ");
-        int deyer = task.nextInt();
+        double deyer = task.nextDouble();
         task.nextLine();
         System.out.print("hedef valyutani daxil edin: ");
         String hedefvalyuta = task.nextLine();
 
         switch (hedefvalyuta){
-            case "dollar-azn" -> System.out.println(deyer * 1.7);
-            case "azn-dollar" -> System.out.println(deyer / 1.7);
+            case "usd-azn" -> System.out.println(deyer * 1.7);
+            case "azn-usd" -> System.out.println(deyer / 1.7);
             case "azn-euro" -> System.out.println(deyer / 2);
             case "euro-azn" -> System.out.println(deyer * 2);
-            case "dollar-euro" -> System.out.println(deyer * 0.8);
-            case "euro-dollar" -> System.out.println(deyer / 0.8);
+            case "usd-euro" -> System.out.println(deyer * 0.8);
+            case "euro-usd" -> System.out.println(deyer / 0.8);
             default -> System.out.println("daxil etdiyiniz valyuta yalnisdir");
         }
 
