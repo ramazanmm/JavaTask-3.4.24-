@@ -82,21 +82,31 @@ public class Main {
         Scanner task = new Scanner(System.in);
         System.out.print("movcud valyutani daxil edin: ");
         String valyuta = task.nextLine();
+        System.out.print("hedef valyutani daxil edin: ");
+        String hedefvalyuta = task.nextLine();
         System.out.print("deyeri daxil edin: ");
         double deyer = task.nextDouble();
         task.nextLine();
-        System.out.print("hedef valyutani daxil edin: ");
-        String hedefvalyuta = task.nextLine();
 
-        switch (hedefvalyuta){
-            case "usd-azn" -> System.out.println(deyer * 1.7);
-            case "azn-usd" -> System.out.println(deyer / 1.7);
-            case "azn-euro" -> System.out.println(deyer / 2);
-            case "euro-azn" -> System.out.println(deyer * 2);
-            case "usd-euro" -> System.out.println(deyer * 0.8);
-            case "euro-usd" -> System.out.println(deyer / 0.8);
-            default -> System.out.println("daxil etdiyiniz valyuta yalnisdir");
+        switch (valyuta){
+            case "usd" :
+                switch (hedefvalyuta){
+                    case "azn" :
+                        System.out.println(deyer * 1.7);
+                        break;
+                    case "euro" :
+                        System.out.println(deyer * 0.8);
+                        break;
+                }
+            case "azn" :
+                switch (hedefvalyuta){
+                    case "usd" :
+                        System.out.println(deyer / 1.7);
+                        break;
+                    case "euro" :
+                        System.out.println(deyer / 0.8);
+                        break;
+                }
         }
-
     }
 }
