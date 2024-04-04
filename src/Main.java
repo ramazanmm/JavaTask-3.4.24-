@@ -24,6 +24,11 @@ public class Main {
 //        }
 
 
+
+
+
+
+
 //        Scanner task1 = new Scanner(System.in);
 //        System.out.print("necenci ay oldugunu daxil edin: ");
 //        int month = task1.nextInt();
@@ -47,6 +52,13 @@ public class Main {
 //        }
 
 
+
+
+
+
+//        verilen isiq rengine gore svetaforun isleme prinsipini simulasiya edin, sari gelse "Hazirlasin",
+//            qirmizi gelse "Dayanin",  yasil gelse "Hereket edin" cap olunsun
+//
 //        Scanner isiqfor = new Scanner(System.in);
 //        System.out.println("isiqforun rengini daxil edin: ");
 //        String reng = isiqfor.nextLine();
@@ -59,6 +71,14 @@ public class Main {
 //        }
 
 
+
+
+
+
+
+//        Kicik bir proqram yazin, proqram sizden valyuta, hedef valyuta , ve deyeri alsin, ve
+//        verilen valyutadan hedef valyutaya cevirib deyeri cap etsin
+//
         Scanner task = new Scanner(System.in);
         System.out.print("movcud valyutani daxil edin: ");
         String valyuta = task.nextLine();
